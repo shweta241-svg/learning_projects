@@ -1,0 +1,360 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(5, 5, 4);
+  
+}
+
+.app-img{
+  background-image: url(https://www.shutterstock.com/image-photo/clapperboard-popcorn-film-reel-on-260nw-2001924512.jpg);
+  background-size: cover; /* Make sure the image covers the whole area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  height: 100vh; /* Ensure the app takes up the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background-color: rgb(30, 29, 29);
+  /* border: 1px solid yellowgreen; */
+}
+
+.add-movie-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.add-movie-btn i {
+  margin-right: 5px;
+}
+
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.movie {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.like-btn {
+  background-color: #240eb4;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.like-btn i {
+  margin-right: 5px;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-section h3 {
+  margin-bottom: 10px;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.comment-input button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comment-input button i {
+  margin-right: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 400px;
+  /* justify-content: center; */
+  margin-left: 10px;
+
+  
+}
+
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+  color:#0f6fd5;
+  font-weight:500;
+}
+
+.modal-content label input,
+.modal-content label textarea {
+  width:90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #100f0f;
+  border-radius: 5px;
+}
+
+.save-btn,
+.close-btn {
+  background-color: #0f6fd5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.save-btn:hover {
+  background-color: #370ac1;
+  /* margin-right: 10px; */
+}
+
+.close-btn {
+  background-color: #dc3545;
+}
+.close-btn:hover{
+  background-color: red;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: white; */
+  color: black;
+}
+
+
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movie {
+  background-color:white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(148, 148, 180);
+  padding: 10px;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  transition: all ease-in-out 0.5s;
+  /* width: 15%;
+  height:100%; */
+   object-fit: cover;
+  gap: 10px;
+  /* box-sizing:border-box; */
+}
+/* 
+.movie:hover{
+  width: 25%;
+} */
+
+.movie img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.movie h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.like-btn, .comment-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.like-btn.liked {
+  background-color: #0033ff;
+}
+
+.like-btn i, .comment-btn i {
+  margin-right: 5px;
+}
+
+.like-btn:hover, .comment-btn:hover {
+  background-color: #0056b3;
+}
+
+.comment-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.comment-section p {
+  margin: 5px 0;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.comment-input button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.comment-input button:hover {
+  background-color: #218838;
+}
+
+.comment {
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.comment p {
+  margin: 5px 0;
+}
+
+.reply-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.reply-btn:hover {
+  text-decoration: underline;
+}
+
+.reply-input {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.reply-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.reply-input button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.reply-input button:hover {
+  background-color: #218838;
+}
+
+.reply {
+  margin-left: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #ccc;
+  font-size: 14px;
+  color: #555;
+}

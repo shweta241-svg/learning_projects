@@ -1,0 +1,165 @@
+.movie-list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .movie {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    flex: 0 0 auto;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .movie h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .movie p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .like-btn, .comment-btn, .delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .like-btn.liked {
+    background-color: #ff0000;
+  }
+  
+  .like-btn i, .comment-btn i, .delete-btn i {
+    margin-right: 5px;
+  }
+  
+  .like-btn:hover, .comment-btn:hover, .delete-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .comment-section {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .comment-section p {
+    margin: 5px 0;
+  }
+  
+  .comment-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .comment-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .comment-input button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-input button:hover {
+    background-color: #218838;
+  }
+  
+  .comment {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .comment p {
+    margin: 5px 0;
+  }
+  
+  .reply-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .reply-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .reply-input {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .reply-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .reply-input button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reply-input button:hover {
+    background-color: #218838;
+  }
+  
+  .reply {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 2px solid #ccc;
+    font-size: 14px;
+    color: #555;
+  }
+  

@@ -1,0 +1,324 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app-header {
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-film-scene-film-background-picture-image_1082529.jpg'); /* Use the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1400px;
+    height: 200px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+  }
+  
+  .app-header h1 {
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .app-content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .modal input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+  }
+  
+  .modal button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  
+  body{
+    background-color: rgb(62, 60, 60);
+  }
+  .movie-list {
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+  } 
+  
+  .movie {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px yellow;
+    padding: 10px;
+    width: 250px;
+    flex: 0 0 auto;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie:hover {
+    transform: scale(1.05);
+  }
+  
+ .add-btn{
+    background-color: #007bff;
+    color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 0px 1px 2px white;
+ }
+ .add-btn:hover{
+    background-color: #0056b3;
+ }
+  .movie img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+  }
+  
+  .movie h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .movie p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .like-btn, .comment-btn, .delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .like-btn.liked {
+    background-color: #3300ff;
+  }
+  
+  .like-btn i, .comment-btn i, .delete-btn i {
+    margin-right: 5px;
+  }
+  
+  .like-btn:hover, .comment-btn:hover, .delete-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .comment-section {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .comment-section p {
+    margin: 5px 0;
+  }
+  
+  .comment-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .comment-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .comment-input button {
+    background-color: #e8f4eb;
+    color: rgb(97, 95, 95);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-input button:hover {
+    /* background-color: #218838; */
+    border: 1px solid green;
+    box-shadow: 0px 2px 4px green;
+  }
+  
+  .comment {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .comment p {
+    margin: 5px 0;
+  }
+  
+  .reply-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .reply-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .reply-input {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  
+  .reply-input button:hover {
+    background-color: #218838;
+  }
+  
+  .reply {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 2px solid #ccc;
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+  .modal{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px blue;
+    text-align: center;
+    /* z-index: 1000; */
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 400px;
+    /* justify-content: center; */
+    margin-left: 10px;
+    border: 2px solid white;
+  
+    
+  }
+  
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 10px;
+    color:#0f6fd5;
+    font-weight:500;
+  }
+  
+  .modal-content label input,
+  .modal-content label textarea {
+    width:90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    }
+    
+   
+    .modal-content label textarea:hover{
+      box-shadow: 0px 2px 4px rgb(177, 177, 250);
+
+  }
+  .modal-content label input:hover{
+    box-shadow: 0px 2px 4px rgb(177, 177, 228);
+
+  }
+  .app-content.blur{
+    filter: blur(5px);
+  }
+
+  .modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .save-btn,
+  .close-btn {
+    background-color: #0f6fd5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .save-btn:hover {
+    background-color: #370ac1;
+    /* margin-right: 10px; */
+  }
+  
+  .close-btn:hover{
+    background-color: red;
+  }
